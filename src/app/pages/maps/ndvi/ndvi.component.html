@@ -1,0 +1,17 @@
+<nb-card>
+  <nb-card-header>
+    <div class="row">
+      <div class="col-8">
+        NDVI Maps
+      </div>
+      <div class="col-4">
+        <nb-select placeholder="2019_02_21" (selectedChange)="onMenuItemSelected($event)">
+          <nb-option *ngFor="let date of dates" [value]="date">{{ date }}</nb-option>
+        </nb-select>
+      </div>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <div leaflet [leafletOptions]="options" (leafletMapReady)="onMapReady($event)"></div>
+  </nb-card-body>
+</nb-card>

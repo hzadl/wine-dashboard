@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "tint",
+        "name": "Soil Sensor 1 (row 3, vine 5)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6010290980339,
+          -34.41112078314648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "tint",
+        "name": "Soil Sensor 2 (row 12, vine 22)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.60064285993576,
+          -34.41140623807757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "tint",
+        "name": "Soil Sensor 3 (row 22, vine 45)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.60022979974747,
+          -34.411676202309856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "tint",
+        "name": "Soil Sensor 4 (row 33, vine 65)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.59990525245667,
+          -34.41207008298733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "seedling",
+        "name": "Dendrometer (row 3, vine 5)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.60103178024292,
+          -34.411118570313754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "thermometer-quarter",
+        "name": "TEROS Triple Soil Sensor (row 3, vine 5)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.60103178024292,
+          -34.411118570313754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "cloud-sun",
+        "name": "Weather Station (row 12 east end)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6013697385788,
+          -34.41134870460395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "markersymbol": "wifi",
+        "name": "Loxton Research Centre (gateway)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.592825,
+          -34.439393
+        ]
+      }
+    }
+  ]
+}

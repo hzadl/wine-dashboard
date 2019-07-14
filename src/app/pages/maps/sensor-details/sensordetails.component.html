@@ -1,0 +1,23 @@
+<nb-card>
+        <nb-card-header>
+                <nav class="navigation">
+                        <a href="#/pages/maps/sensorsmap" class="link" aria-label="Back">
+                                <i class="icon nb-arrow-thin-left"></i>
+                        </a>
+                        <h3 style="text-align: center;">{{sensorName}}</h3>
+                </nav>
+
+                <div class="checkbox-container">
+                        <div *ngFor="let panel of sensorData">
+                                <nb-checkbox status="primary" [(ngModel)]="panel.visible" (change)="itemSelected()">
+                                        {{panel.name}} </nb-checkbox>
+                        </div>
+                </div>
+        </nb-card-header>
+        <nb-card-body>
+                <div *ngFor="let panel of sensorData">
+                        <iframe [src]="panel.url | safe" [style]="panel.visible?'':'display:none' | safestyle"
+                                [width]="panel.width" [height]="panel.height"></iframe>
+                </div>
+        </nb-card-body>
+</nb-card>

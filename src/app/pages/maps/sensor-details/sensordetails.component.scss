@@ -1,0 +1,25 @@
+@import "../../../@theme/styles/themes";
+
+@include nb-install-component() {
+  /deep/ .navigation .link .icon {
+    font-size: 2rem;
+  }
+  /deep/ nb-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+  }
+  /deep/ .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+  }
+  /deep/ nb-checkbox {
+    display: inline-block;
+  }
+  /deep/ iframe {
+    border: 2px white solid;
+  }
+}

@@ -1,0 +1,6 @@
+<nb-card>
+  <nb-card-header>Sensor Map</nb-card-header>
+  <nb-card-body>
+    <div leaflet [leafletOptions]="options" (leafletMapReady)="onMapReady($event)"></div>
+  </nb-card-body>
+</nb-card>

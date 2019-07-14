@@ -1,0 +1,68 @@
+<nb-card>
+        <nb-card-header>
+                <nav class="navigation">
+                        <a href="#/pages/maps/sensorsmap" class="link" aria-label="Back">
+                                <i class="icon nb-arrow-thin-left"></i>
+                        </a>
+                        <h3 style="text-align: center;">{{data['Image name']}}</h3>
+                </nav>
+
+                <div class="row">
+                        <div class="col-8">
+
+                        </div>
+                        <div class="col-4">
+                                <nb-select placeholder="2019_02_21" (selectedChange)="onMenuItemSelected($event)">
+                                        <nb-option *ngFor="let date of dates" [value]="date">{{ date }}</nb-option>
+                                </nb-select>
+                        </div>
+                </div>
+        </nb-card-header>
+        <nb-card-body>
+                <div class="row image-container">
+                        <div class="col-4 image">
+                                <img [src]="data['img']">
+                        </div>
+                        <div class="col-8 stats">
+                                <nb-card class="info">
+                                        <nb-card-header>
+                                                <h2>Vine Statistics</h2>
+                                        </nb-card-header>
+                                        <nb-card-body>
+                                                <div class="column">
+                                                        <div>
+                                                                <h4>AI Density Index: {{data['AI Density Index']}}</h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Leaf Area Index:
+                                                                        {{data['Leaf area index']}}</h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Growth Stage: {{data['Growth Stage']}}
+                                                                </h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Grape Bunch Count:
+                                                                        {{data['Grape Bunch Count']}}</h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Disease Detected:
+                                                                        {{data['Disease Detected']?data['Disease Name']:'No'}}
+                                                                </h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Green Shoot Count:
+                                                                        {{data['Green Shoot Count']}}</h4>
+                                                        </div>
+                                                        <div>
+                                                                <h4 class="item">Temperature: {{data['Temperature']}}
+                                                                        &deg;C</h4>
+                                                        </div>
+                                                </div>
+                                        </nb-card-body>
+                                </nb-card>
+                        </div>
+                </div>
+                <div echarts [options]="options" class="echart"></div>
+        </nb-card-body>
+</nb-card>

@@ -1,0 +1,52 @@
+@import "../../../@theme/styles/themes";
+
+@include nb-install-component() {
+  nb-card-body {
+    padding: 0;
+  }
+
+  /deep/ .leaflet-top,
+  /deep/ .leaflet-bottom {
+    z-index: 997;
+  }
+
+  /deep/ .leaflet-container {
+    width: 100%;
+    height: nb-theme(card-height-large);
+  }
+
+  /deep/ h1 {
+    color: black;
+  }
+
+  .fa {
+    font-family: FontAwesome;
+  }
+
+  /deep/ .awesome-marker i {
+    font-size: 18px;
+    margin-top: 8px;
+    align-content: center;
+  }
+
+  /deep/ .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  /deep/ .legend {
+    line-height: 18px;
+    color: #555;
+  }
+  /deep/ .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../../@theme/styles/themes";
+
+@include nb-install-component() {
+  /deep/ .navigation .link .icon {
+    font-size: 2rem;
+  }
+  /deep/ nb-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+  }
+  /deep/ .checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+  }
+  /deep/ nb-checkbox {
+    display: inline-block;
+  }
+  /deep/ iframe {
+    border: 2px white solid;
+  }
+  /deep/ .echart {
+    height: 100%;
+    width: 100%;
+  }
+
+  /deep/ .image {
+    max-height: 480px;
+    width: auto;
+    text-align: center;
+  }
+
+  /deep/ img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    background: black;
+  }
+
+  /deep/ .image-container {
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+  }
+  /deep/ .image-header {
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+  }
+  /deep/ .item {
+    padding-top: 5px;
+  }
+
+  /deep/ .info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+}
